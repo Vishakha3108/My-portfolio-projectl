@@ -20,7 +20,7 @@ function Home() {
 
     <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
         <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/2 mt-12 md:mt-24">
+        <div className="md:w-1/2 mt-12 md:mt-24 order-2 md:order-1">
         <span className="text-xl font-semibold">Welcome in my Feed</span>
         <div className="flex space-x-1 text-2xl md:text-4xl">
         <h1>Hello, I'm a</h1>
@@ -41,17 +41,19 @@ function Home() {
         </p>
         <br />
         {/* social media icons  */}
-        <div className="flex justify-between"> 
-        <div className="space-y-2">
+        <div className="flex flex-col items-center md:flex-row justify-between space-y-6 md:space-y-0 "> 
+        <div className="space-y-2 ">
             <h2 className="font-semibold text-lg">Availabale on</h2>
             <ul className="flex space-x-5">
                 <li>
-                    {""}
+                    <a href="https://github.com/Vishakha3108" target="_blank">
                     <FaGithubSquare className="text-2xl cursor-pointer" />
+                    </a>
                 </li>
                 <li>
-                    {""}
+                    <a href="https://www.linkedin.com/in/vishakhabhojak3108/" target="_blank">
                     <FaLinkedin className="text-2xl cursor-pointer" />
+                    </a>
                 </li>
             </ul>
              </div>
@@ -69,11 +71,12 @@ function Home() {
         </div>
        
         </div>
-        <div className="md:w-1/2 ml-64 mt-20">
-        <img src={pic} alt="" className="rounded-full w-[400px] h-[450px]" />
+        <div className="md:w-1/2 md:ml-64 md:mt-20 order-1">
+        <img src={pic} alt="" className="rounded-full md:w-[400px] md:h-[450px] h-[300px] w-[280px] ml-14 mt-4" />
         </div>
         </div>
     </div>
+    <hr />
     </>
   )
 }
