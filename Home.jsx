@@ -26,7 +26,7 @@ function Home() {
         <h1>Hello, I'm a</h1>
         {/* <span className="text-red-700 font-bold">Devloper</span> */}
         <ReactTyped
-           className="text-red-700 font-bold"
+           className="text-[#eb90f3ee] font-bold"
           strings={["Devloper","Programmer","Coder"]}
           typeSpeed={40}
           backSpeed={50}
@@ -41,29 +41,29 @@ function Home() {
         </p>
         <br />
         {/* social media icons  */}
-        <div className="flex flex-col items-center md:flex-row justify-between space-y-6 md:space-y-0 "> 
+        <div className="flex flex-col items-center md:flex-row justify-between space-y-6 md:space-y-0 animate-pulse"> 
         <div className="space-y-2 ">
             <h2 className="font-semibold text-lg">Availabale on</h2>
             <ul className="flex space-x-5">
                 <li>
                     <a href="https://github.com/Vishakha3108" target="_blank">
-                    <FaGithubSquare className="text-2xl cursor-pointer" />
+                    <FaGithubSquare className="text-4xl cursor-pointer bg-[#eb90f3af] px-1 rounded-md " />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/vishakhabhojak3108/" target="_blank">
-                    <FaLinkedin className="text-2xl cursor-pointer" />
+                    <FaLinkedin className="text-4xl cursor-pointer bg-[#eb90f3af] px-1 rounded-md" />
                     </a>
                 </li>
             </ul>
              </div>
-             <div className="space-y-2">
+             <div className="space-y-2 animate-pulse">
              <h2 className="font-semibold text-lg">Currently Working On</h2>
             <div className="flex space-x-5">
-            <DiMongodb className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] border-gray-200" />
-            <SiExpress className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] border-gray-200" />
-            <FaReact className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] border-gray-200" />
-            <FaNodeJs className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] border-gray-200" />
+            <DiMongodb className="text-xl md:text-3xl hover:scale-110 duration-200 bg-[#eb90f3af] px-1 rounded-md" />
+            <SiExpress className="text-xl md:text-3xl hover:scale-110 duration-200 bg-[#eb90f3af] px-1 rounded-md" />
+            <FaReact className="text-xl md:text-3xl hover:scale-110 duration-200 bg-[#eb90f3af] px-1 rounded-md" />
+            <FaNodeJs className="text-xl md:text-3xl hover:scale-110 duration-200 bg-[#eb90f3af] px-1 rounded-md" />
             </div>
 
              </div>
@@ -71,8 +71,8 @@ function Home() {
         </div>
        
         </div>
-        <div className="md:w-1/2 md:ml-64 md:mt-20 order-1">
-        <img src={pic} alt="" className="rounded-full md:w-[400px] md:h-[450px] h-[300px] w-[280px] ml-14 mt-4" />
+        <div className="md:w-1/2 md:ml-64 md:mt-20 order-1 hover:scale-y-105 scale-x-105 duration-200">
+        <img src={pic}  alt="" className="rounded-3xl md:w-[300px] md:h-[280px] h-[350px] w-[280px] mt-20 border-[4px] border-[#eb90f3af] " />
         </div>
         </div>
     </div>
